@@ -102,10 +102,9 @@ set foldcolumn=3 " показать полосу для управления с�
 set foldlevel=1 " Первый уровень вложенности открыт, остальные закрыты
 "set foldopen=all " автоматическое открытие сверток при заходе в них
 
-
 set number
 set expandtab
-set tabstop=2
+set tabstop=4
 set incsearch
 set termguicolors
 let g:gruvbox_italic=1
