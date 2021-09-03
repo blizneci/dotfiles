@@ -92,6 +92,17 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+"=============НАСТРОЙКИ СВОРАЧИВАНИЯ БЛОКОВ КОДА (фолдинг)=============
+set foldenable " отклключить фолдинг по умолчанию
+"set foldmethod=syntax " определять блоки на основе синтаксиса файла
+set foldmethod=indent " определять блоки на основе отступов
+set shiftwidth=2 ""
+set foldnestmax=5       "deepest fold is 3 levels
+set foldcolumn=3 " показать полосу для управления сворачиванием
+set foldlevel=1 " Первый уровень вложенности открыт, остальные закрыты
+"set foldopen=all " автоматическое открытие сверток при заходе в них
+
+
 set number
 set expandtab
 set tabstop=2
