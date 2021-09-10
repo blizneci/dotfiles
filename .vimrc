@@ -29,6 +29,11 @@ Plug 'kien/ctrlp.vim'
 "easy motion
 Plug 'easymotion/vim-easymotion'
 
+"this plugin provides mappings to easily delete, change and add such
+"surroundings in pairs
+"use ':help surround' for help
+Plug 'tpope/vim-surround'
+
 call plug#end()
 
 " An example for a vimrc file.
