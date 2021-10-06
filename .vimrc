@@ -12,7 +12,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'morhetz/gruvbox'
 
 "code-completion engine for Vim
-Plug 'ycm-core/YouCompleteMe'
+"Plug 'ycm-core/YouCompleteMe'
 
 "auto-pairs
 Plug 'jiangmiao/auto-pairs'
