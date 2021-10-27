@@ -110,11 +110,23 @@ set foldlevel=1 " Первый уровень вложенности откры�
 set number
 set expandtab
 set tabstop=4
+set softtabstop=4
+set autoindent
+set fileformat=unix
 set incsearch
 set termguicolors
 let g:gruvbox_italic=1
 colorscheme gruvbox
 set background=dark
+set scrolloff=7
+set colorcolumn=79
+
+"Настройки для возможности работы с русской раскладкой без переключения
+"системной раскладки
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
 
 "mappings
 
