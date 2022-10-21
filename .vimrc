@@ -34,6 +34,12 @@ Plug 'easymotion/vim-easymotion'
 "use ':help surround' for help
 Plug 'tpope/vim-surround'
 
+" Улучшенная строка состояния
+Plug 'vim-airline/vim-airline'
+
+" Плагин для иконок и шрифтов в Airline
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " An example for a vimrc file.
@@ -101,7 +107,7 @@ endif
 set foldenable " отклключить фолдинг по умолчанию
 "set foldmethod=syntax " определять блоки на основе синтаксиса файла
 set foldmethod=indent " определять блоки на основе отступов
-set shiftwidth=2 ""
+set shiftwidth=4 ""
 set foldnestmax=5       "deepest fold is 5 levels
 set foldcolumn=3 " показать полосу для управления сворачиванием
 set foldlevel=1 " Первый уровень вложенности открыт, остальные закрыты
@@ -120,17 +126,38 @@ colorscheme gruvbox
 set background=dark
 set scrolloff=7
 set colorcolumn=79
+<<<<<<< HEAD
 
 "Настройки для возможности работы с русской раскладкой без переключения
 "системной раскладки
+=======
+syntax enable
+set encoding=UTF-8
+
+
+" Настройки для возможности работы с русской раскладкой без переключения
+" системной раскладки
+>>>>>>> 3bec42e (change .vimrc, add airline plugin)
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
 
+<<<<<<< HEAD
 "mappings
 
+=======
+" Настройки для Airline
+let g:airline_powerline_fonts = 1 " Включить поддуржку Powerline шрифтов
+let g:airline#extensions#keymap#enabled = 0 " Не показывать текущий маппинг
+let g:airline_section_z = "\ue0a1:%l/%L Col:%c" " Кастомная графа положения курсора
+let g:Powerline_symbols='unicode' " Поддержка unicode
+let g:airline#extensions#xkblayout#enabled = 0
+let g:webdevicons_enable_nerdtree = 1
+
+" mappings
+>>>>>>> 3bec42e (change .vimrc, add airline plugin)
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
 
-
+let g:markdown_fenced_languages = ['html', 'python', 'vim', 'ruby', 'bash=sh']
