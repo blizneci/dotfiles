@@ -113,7 +113,7 @@ set foldcolumn=3 " показать полосу для управления с�
 set foldlevel=1 " Первый уровень вложенности открыт, остальные закрыты
 "set foldopen=all " автоматическое открытие сверток при заходе в них
 
-set number
+set number relativenumber
 set expandtab
 set tabstop=4
 set softtabstop=4
@@ -126,11 +126,9 @@ colorscheme gruvbox
 set background=dark
 set scrolloff=7
 set colorcolumn=79
-
-"Настройки для возможности работы с русской раскладкой без переключения
-"системной раскладки
-syntax enable
 set encoding=UTF-8
+set cursorline
+syntax enable
 
 
 " Настройки для возможности работы с русской раскладкой без переключения
@@ -140,18 +138,17 @@ set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
 
-"mappings
-
 " Настройки для Airline
 let g:airline_powerline_fonts = 1 " Включить поддуржку Powerline шрифтов
-let g:airline#extensions#keymap#enabled = 0 " Не показывать текущий маппинг
 let g:airline_section_z = "\ue0a1:%l/%L Col:%c" " Кастомная графа положения курсора
 let g:Powerline_symbols='unicode' " Поддержка unicode
-let g:airline#extensions#xkblayout#enabled = 0
-let g:webdevicons_enable_nerdtree = 1
 
 " mappings
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
 
 let g:markdown_fenced_languages = ['html', 'python', 'vim', 'ruby', 'bash=sh']
+set ttimeoutlen=10 " Понижаем задержку ввода escape последовательностей
+let &t_SI.="\e[5 q" "SI = режим вставки
+let &t_SR.="\e[3 q" "SI = режим замены
+let &t_EI.="\e[1 q" "SI = нормальный режим
