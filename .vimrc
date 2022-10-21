@@ -129,7 +129,6 @@ set colorcolumn=79
 
 "Настройки для возможности работы с русской раскладкой без переключения
 "системной раскладки
-=======
 syntax enable
 set encoding=UTF-8
 
@@ -143,7 +142,6 @@ highlight lCursor guifg=NONE guibg=Cyan
 
 "mappings
 
-=======
 " Настройки для Airline
 let g:airline_powerline_fonts = 1 " Включить поддуржку Powerline шрифтов
 let g:airline#extensions#keymap#enabled = 0 " Не показывать текущий маппинг
