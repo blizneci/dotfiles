@@ -126,7 +126,6 @@ colorscheme gruvbox
 set background=dark
 set scrolloff=7
 set colorcolumn=79
-<<<<<<< HEAD
 
 "Настройки для возможности работы с русской раскладкой без переключения
 "системной раскладки
@@ -137,13 +136,11 @@ set encoding=UTF-8
 
 " Настройки для возможности работы с русской раскладкой без переключения
 " системной раскладки
->>>>>>> 3bec42e (change .vimrc, add airline plugin)
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
 
-<<<<<<< HEAD
 "mappings
 
 =======
@@ -156,7 +153,6 @@ let g:airline#extensions#xkblayout#enabled = 0
 let g:webdevicons_enable_nerdtree = 1
 
 " mappings
->>>>>>> 3bec42e (change .vimrc, add airline plugin)
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
 
