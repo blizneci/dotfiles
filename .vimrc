@@ -152,3 +152,6 @@ set ttimeoutlen=10 " Понижаем задержку ввода escape пос�
 let &t_SI.="\e[5 q" "SI = режим вставки
 let &t_SR.="\e[3 q" "SI = режим замены
 let &t_EI.="\e[1 q" "SI = нормальный режим
+
+" Skeleton files
+autocmd BufNewFile *.sh 0r ~/scripts/skeletons/bash.sh
