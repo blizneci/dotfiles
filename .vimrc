@@ -128,6 +128,7 @@ set scrolloff=7
 set colorcolumn=79
 set encoding=UTF-8
 set cursorline
+set mouse=
 syntax enable
 
 
@@ -155,3 +156,4 @@ let &t_EI.="\e[1 q" "SI = нормальный режим
 
 " Skeleton files
 autocmd BufNewFile *.sh 0r ~/scripts/skeletons/bash.sh
+autocmd BufNewFile *.go 0r ~/scripts/skeletons/go.go
