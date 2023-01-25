@@ -148,7 +148,7 @@ let g:Powerline_symbols='unicode' " Поддержка unicode
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
 
-let g:markdown_fenced_languages = ['html', 'python', 'vim', 'ruby', 'bash=sh']
+let g:markdown_fenced_languages = ['html', 'python', 'vim', 'ruby', 'bash=sh', 'go']
 set ttimeoutlen=10 " Понижаем задержку ввода escape последовательностей
 let &t_SI.="\e[5 q" "SI = режим вставки
 let &t_SR.="\e[3 q" "SI = режим замены
