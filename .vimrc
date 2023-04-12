@@ -40,6 +40,9 @@ Plug 'vim-airline/vim-airline'
 " Плагин для иконок и шрифтов в Airline
 Plug 'ryanoasis/vim-devicons'
 
+" Плагин для Golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
 
 " An example for a vimrc file.
@@ -156,4 +159,3 @@ let &t_EI.="\e[1 q" "SI = нормальный режим
 
 " Skeleton files
 autocmd BufNewFile *.sh 0r ~/scripts/skeletons/bash.sh
-autocmd BufNewFile *.go 0r ~/scripts/skeletons/go.go
